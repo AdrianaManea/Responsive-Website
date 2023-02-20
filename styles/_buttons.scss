@@ -1,0 +1,53 @@
+@import './variable';
+
+.btn {
+	overflow: hidden;
+}
+
+.arrow,
+.learn-more:hover {
+	i {
+		font-size: .95rem;
+		animation: moveLeftRight 2s infinite;
+	}
+
+	@keyframes moveLeftRight {
+		0% {
+			transform: translate(0);
+		}
+		60% {
+			transform: translate(10px);
+		}
+		100% {
+			transform: translate(0);
+		}
+	}
+}
+
+.main-btn {
+	background: $color-gradient-primary-3;
+	padding: .8rem 2rem;
+	border-radius: 30px;
+	position: relative;
+	overflow: hidden; // hide the circle created with span:last-child
+	transition: $transition;
+	display: inline-block;
+
+	span:last-child {
+		position: absolute;
+		top: 5px;
+		right: -55%;
+		width: 180px;
+		height: 180px;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+		transition: $transition;
+		transition: all .4s cubic-bezier(cubic-bezier(0.21, 0.69, 0.73, 1.1));
+	}
+	&:hover {
+		span {
+			right: -30%;
+			top: -15px;
+		}
+	}
+}

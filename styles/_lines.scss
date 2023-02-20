@@ -1,0 +1,19 @@
+@import './variable';
+
+// Lines
+.lines {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-evenly;
+	z-index: -1; // the lines to be behind button "Request Demo"
+	.line {
+		min-height: 100%;
+		width: 1px;
+		background-color: $color-grey-9;
+	}
+}
+
