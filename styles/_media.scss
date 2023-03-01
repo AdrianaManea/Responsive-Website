@@ -4,7 +4,6 @@
 	}
 
 	header .navigation .nav-btn-container {
-		// display: flex;
 		justify-content: flex-end;
 	}
 }
@@ -24,6 +23,7 @@
 
 	header .header-content {
 		grid-template-columns: repeat(1, 1fr);
+		padding-top: 4rem;
 	}
 
 	header .header-content .right-header-content .header-agency-3 {
@@ -58,5 +58,68 @@
 
 	.section-recommendations {
 		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+
+@media screen and (max-width: 890px) {
+	.footer .bottom-navigation .bottom-nav-icons {
+		margin-top: 1rem;
+	}
+}
+
+
+@media screen and (max-width: 730px){
+	.footer .bottom-navigation h1 {
+		color: $color-accent;
+	}
+	.footer .bottom-navigation .nav-bottom.nav-bottom-contact {
+		margin-top: 1rem;
+		h4 {
+			color: $color-accent;
+		}
+	}
+
+	.footer .bottom-navigation .nav-bottom.company {
+		margin-top: 1rem;
+		h4 {
+			color: $color-accent;
+		}
+	}
+
+	.footer .bottom-navigation .nav-bottom.instagram {
+		margin-top: 1rem;
+		h4 {
+			color: $color-accent;
+		}
+	}
+}
+
+
+@media screen and (max-width: 680px){
+	.main-content .section-about {
+		padding-top: 3rem !important;
+	}
+
+	header .header-content .right-header-content .header-agency-3 {
+		height: 350px;
+	}
+
+	.footer .bottom-navigation .nav-bottom.instagram {
+		margin-top: 0;
+	}
+}
+
+
+@media screen and (max-width: 460px){
+	header .header-content {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.main-content .section-about {
+		padding-top: 5rem !important;
 	}
 }

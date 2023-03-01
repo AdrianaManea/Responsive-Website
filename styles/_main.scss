@@ -5,7 +5,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
-	padding-top: 10rem !important;
+	padding-top: 8rem !important;
 	.left-about {
 		p {
 			padding: 1.5rem 0;
@@ -371,16 +371,28 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 100%;
-		padding: 4rem 6rem;
+		padding: 4rem 16rem;
 		border-radius: 7px;
 		z-index: 5;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 3rem;
 
+		@media screen and (max-width: 1460px) {
+			// grid-template-columns: 1fr;
+			padding: 4rem 8rem;
+		}
 		@media screen and (max-width: 1380px) {
 			grid-template-columns: 1fr;
-			padding: 4rem 18rem;
+			padding: 4rem 16rem;
+		}
+		@media screen and (max-width: 1000px) {
+			// grid-template-columns: 1fr;
+			padding: 2rem 8rem;
+		}
+		@media screen and (max-width: 730px) {
+			// grid-template-columns: 1fr;
+			padding: 2rem 2rem;
 		}
 
 		.left-video-container {

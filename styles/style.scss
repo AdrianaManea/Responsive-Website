@@ -13,12 +13,22 @@
   list-style-type: none;
 }
 
+html {
+  @media screen and (max-width: 460px) {
+    font-size: 90%;
+	}
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   color: $color-white;
   background-color: $color-bg;
   position: relative;
+
+  @media screen and (max-width: 460px) {
+    font-size: 1.1rem;
+	}
 }
 
 // Custom Scrollbar

@@ -41,6 +41,7 @@
 
 		.logo-container {
 			flex: 5 ;
+			margin: 0 1.5rem;
 		}
 
 		.bottom-nav-icons {
@@ -73,7 +74,6 @@
 			}
 		}
 
-		.instagram {
 			.instagram-img {
 				display: grid;
 				grid-template-columns: repeat(3, 90px);
@@ -87,7 +87,6 @@
 				}
 			}
 		}
-	}
 
 	.footer-copywrite {
 		padding-top: 3rem;
@@ -104,3 +103,4 @@
 		}
 	}
 }
+

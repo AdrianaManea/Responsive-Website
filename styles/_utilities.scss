@@ -7,6 +7,9 @@
 	@media screen and (max-width: 910px) {
 		padding: 8rem 4rem;
 	}
+	@media screen and (max-width: 530px) {
+		padding: 8rem 1.5rem;
+	}
 }
 
 .u-padding-large-2 {
@@ -22,6 +25,10 @@
 	@media screen and (max-width: 910px) {
 		padding-right: 4rem;
 		padding-left: 4rem;
+	}
+	@media screen and (max-width: 530px) {
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
 	}
 }
 
