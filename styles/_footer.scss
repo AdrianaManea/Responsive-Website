@@ -1,0 +1,106 @@
+@import './variable';
+
+
+// Footer
+.footer {
+	padding-top: 6rem !important;
+	padding-bottom: 3rem !important;
+	background-color: $color-bg-3;
+	color: $color-font;
+	h6 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1.5rem;
+		color: $color-grey-4;
+	}
+	a {
+		color: $color-font;
+		transition: $transition;
+		&:hover {
+			color: $color-accent;
+			text-decoration: underline;
+		}
+	}
+	i {
+		font-size: 1.3rem;
+		transition: $transition;
+		&:hover {
+			color: $color-accent;
+		}
+	}
+	h1 {
+		color: $color-white;
+		margin-bottom: 1rem;
+	}
+
+	.bottom-navigation {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 3rem;
+
+		.logo-container {
+			flex: 5 ;
+		}
+
+		.bottom-nav-icons {
+			display: flex;
+			margin-top: 2rem;
+			.fa-facebook {
+				margin-right: .3rem;
+			}
+			i:not(first-child) {
+				margin: 0 .5rem;
+				cursor: pointer;
+			}
+		}
+
+		.nav-bottom {
+			margin: 0 1.5rem;
+			.nav-item {
+				margin-bottom: 1rem;
+			}
+		}
+
+		.nav-title {
+			padding-bottom: 1.5rem;
+		}
+
+		.nav-bottom-contact {
+			.nav-item {
+				display: grid;
+				grid-template-columns: 30px auto;
+			}
+		}
+
+		.instagram {
+			.instagram-img {
+				display: grid;
+				grid-template-columns: repeat(3, 90px);
+				grid-template-rows: repeat(2, 90px);
+				grid-gap: .5rem;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.footer-copywrite {
+		padding-top: 3rem;
+		text-align: center;
+		border-top: 1px solid $color-grey-9;
+
+		span {
+			color: $color-grey-4;
+			cursor: pointer;
+			transition: $transition;
+			&:hover {
+				color: $color-accent;
+			}
+		}
+	}
+}
