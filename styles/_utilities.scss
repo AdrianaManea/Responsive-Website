@@ -1,5 +1,12 @@
 .u-padding-large {
 	padding: 8rem 18rem;
+
+	@media screen and (max-width: 1380px) {
+		padding: 8rem;
+	}
+	@media screen and (max-width: 910px) {
+		padding: 8rem 4rem;
+	}
 }
 
 .u-padding-large-2 {
@@ -7,6 +14,15 @@
 	padding-right: 18rem;
 	padding-bottom: 6rem;
 	padding-left: 18rem;
+
+	@media screen and (max-width: 1380px) {
+		padding-right: 8rem;
+		padding-left: 8rem;
+	}
+	@media screen and (max-width: 910px) {
+		padding-right: 4rem;
+		padding-left: 4rem;
+	}
 }
 
 .u-cta-btn {

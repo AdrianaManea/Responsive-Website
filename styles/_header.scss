@@ -4,7 +4,7 @@
 
 
 header {
-	min-height: 70vh;
+	min-height: 80vh;
 	position: relative;
 
 	.navigation {
@@ -52,6 +52,10 @@ header {
 				}
 			}
 		}
+	}
+
+	.nav-btn-container {
+		display: flex;
 	}
 
 	.header-content {

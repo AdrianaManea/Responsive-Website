@@ -1,0 +1,62 @@
+@media screen and (max-width: 1300px) {
+	header .navigation .nav-items {
+		display: none;
+	}
+
+	header .navigation .nav-btn-container {
+		// display: flex;
+		justify-content: flex-end;
+	}
+}
+
+
+@media screen and (max-width: 1080px) {
+	header .header-content .left-header-content h1 {
+		font-size: 3rem;
+	}
+}
+
+
+@media screen and (max-width: 910px) {
+	header {
+		min-height: 70vh;
+	}
+
+	header .header-content {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	header .header-content .right-header-content .header-agency-3 {
+		width: 100%;
+		height: 500px;
+		left: 0;
+	}
+
+	header .header-content .right-header-content .header-agency-4 {
+		display: none;
+	}
+
+	header .scroll {
+		display: none;
+	}
+
+	.section-about {
+		grid-template-columns: repeat(1, 1fr);
+
+		.right-about {
+			justify-content: flex-start;
+
+			.about-agency-1 {
+				width: 100%;
+			}
+		}
+	}
+
+	.section-services .title-container {
+		width: 80%;
+	}
+
+	.section-recommendations {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
