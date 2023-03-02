@@ -16,6 +16,8 @@
 html {
   @media screen and (max-width: 460px) {
     font-size: 90%;
+    height: 100%;
+    overflow-x: hidden;
 	}
 }
 
@@ -25,15 +27,31 @@ body {
   color: $color-white;
   background-color: $color-bg;
   position: relative;
+  overflow-x: hidden;
+  height: 100%;
 
   @media screen and (max-width: 460px) {
     font-size: 1.1rem;
 	}
 }
 
+// Page Overlay
+.page-overlay {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 5;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+
 // Custom Scrollbar
 body::-webkit-scrollbar {
   width: 7px;
+  transition: all .4s ease-in-out;
 }
 body::-webkit-scrollbar-track {
   background: $color-bg;
@@ -43,11 +61,13 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: $color-gradient-primary-2;
+  transition: all .4s ease-in-out;
 }
 
 body::-webkit-scrollbar-thumb:hover {
   border-radius: 10px;
   background: $color-gradient-primary-3;
+  transition: all .4s ease-in-out;
 }
 
 

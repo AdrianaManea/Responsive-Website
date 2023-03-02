@@ -12,15 +12,44 @@ header {
 		grid-template-columns: 100px 1fr auto;
 		padding: 1rem 2rem;
 		border-bottom: 1px solid $color-grey-9;
+		// animation: navHide 1s ease-in-out;
+		// @keyframes navHide {
+		// 	0% {
+		// 		transform: translateY(-100%);
+		// 	}
+		// 	100% {
+		// 		transform: translateY(0);
+		// 	}
+		// }
+
 		.logo {
 			display: flex;
 			align-items: center;
+			// animation: navHide2 2.0s ease-in-out;
+			// @keyframes navHide2 {
+			// 	0% {
+			// 		opacity: 0;
+			// 	}
+			// 	100% {
+			// 		opacity: 1;
+			// 	}
+			// }
 		}
+
 		.nav-items {
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
 			margin-right: 4rem;
+			// animation: navHide2 3s ease-in-out;
+			// @keyframes navHide2 {
+			// 	0% {
+			// 		opacity: 0;
+			// 	}
+			// 	100% {
+			// 		opacity: 1;
+			// 	}
+			// }
 			.nav-item {
 				margin: 0 0.7rem;
 				a {
@@ -28,6 +57,7 @@ header {
 					font-size: 1rem;
 					padding: .8rem;
 					position: relative;
+
 					&::before {
 						content: '';
 						position: absolute;
@@ -52,6 +82,18 @@ header {
 				}
 			}
 		}
+
+		// .nav-btn-container {
+		// 	animation: navHide2 2.0s ease-in-out;
+		// 	@keyframes navHide2 {
+		// 		0% {
+		// 			opacity: 0;
+		// 		}
+		// 		100% {
+		// 			opacity: 1;
+		// 		}
+		// 	}
+		// }
 	}
 
 	.nav-btn-container {
@@ -59,10 +101,23 @@ header {
 	}
 
 	.header-content {
+		height: 100%;
+		// width: 100%;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 2rem;
 		.left-header-content {
+			// animation: contentHide 1s ease-in-out;
+			// @keyframes contentHide {
+			// 	0% {
+			// 		opacity: 0;
+			// 		transform: translateX(-120%);
+			// 	}
+			// 	100% {
+			// 		opacity: 1;
+			// 		transform: translateX(0);
+			// 	}
+			// }
 			h1 {
 				font-size: 3.4rem;
 				font-weight: 800;
@@ -81,7 +136,22 @@ header {
 		.right-header-content {
 			position: relative;
 			transition: $transition;
-
+			// animation: contentHide2 1s ease-in-out;
+			// animation-delay: .5s;
+			// opacity: 0;
+			// animation-fill-mode: forwards;
+			// @keyframes contentHide2 {
+			// 	0% {
+			// 		opacity: 0;
+			// 		transform: translateY(-120%) scaleX(0);
+			// 		visibility: none;
+			// 	}
+			// 	100% {
+			// 		opacity: 1;
+			// 		transform: translateX(1);
+			// 		visibility: visible;
+			// 	}
+			// }
 			&:hover {
 				.header-agency-3 {
 					transform: scale(0.9);
@@ -99,7 +169,6 @@ header {
 				top: 15%;
 				left: 5%;
 				border-radius: 5px 5px 5px 70px;
-
 				transition: $transition;
 			}
 
